@@ -1,4 +1,4 @@
-function App() {
+function App(): JSX.Element {
   return <h1>Sammy™ 😎</h1>;
 }
 
