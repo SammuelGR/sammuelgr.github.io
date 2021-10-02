@@ -10,6 +10,7 @@ export const Container = styled.header`
 
   padding-top: 62px;
   padding-left: 112px;
+  padding-bottom: 72px;
   height: 100vh;
 `;
 
@@ -45,7 +46,6 @@ export const Title = styled.h1`
   font-weight: 700;
   font-size: 48px;
   line-height: 57.6px;
-  padding-bottom: 72px;
 `;
 
 export const Ellipse = styled.div`

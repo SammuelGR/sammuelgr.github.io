@@ -11,7 +11,7 @@ export function Header(): JSX.Element {
     <Container>
       <div>
         <Navigation>
-          <a href="#/">Sobre mim</a>
+          <a href="#AboutMe">Sobre mim</a>
           <a href="#/">Habilidades</a>
           <a href="#/">Portfólio</a>
           <a href="#/">Contato</a>
@@ -20,7 +20,10 @@ export function Header(): JSX.Element {
         <Underline />
       </div>
 
-      <Title>Sammy™ 😎</Title>
+      <div>
+        <Title>Sammuel</Title>
+        <Title>Reis</Title>
+      </div>
 
       <Ellipse />
     </Container>
