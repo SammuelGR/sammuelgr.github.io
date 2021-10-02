@@ -2,7 +2,6 @@ import { getSammyAge } from '../utils/dateUtils';
 
 import Polygon1 from '../assets/Polygon_1.png';
 import Polygon2 from '../assets/Polygon_2.png';
-import ProfileImg from '../assets/profile_img.png';
 
 import { Header } from '../components/core/Header';
 import { AboutContainer, Avatar, Polygons } from './index.style';
@@ -28,9 +27,7 @@ export function Home(): JSX.Element {
         </article>
 
         <article>
-          <Avatar>
-            <img src={ProfileImg} alt="Profile" />
-          </Avatar>
+          <Avatar />
 
           <Polygons>
             <img src={Polygon1} alt="Polygon1" />

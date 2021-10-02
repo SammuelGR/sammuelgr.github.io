@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import ProfileImg from '../assets/profile_img.png';
 
 export const AboutContainer = styled.section`
   display: flex;
@@ -53,20 +54,13 @@ export const AboutContainer = styled.section`
 export const Avatar = styled.div`
   width: 240px;
   height: 240px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
   border-radius: 50%;
+
   background-color: #1f1f1f;
-
-  img {
-    width: 230px;
-    height: 230px; // remove these two lines after implementing the real img
-
-    border-radius: 50%;
-    overflow: hidden;
-  }
+  background-image: url(${ProfileImg});
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: 230px;
 `;
 
 export const Polygons = styled.div`
