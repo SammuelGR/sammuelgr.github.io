@@ -59,6 +59,14 @@ export const Avatar = styled.div`
 
   border-radius: 50%;
   background-color: #1f1f1f;
+
+  img {
+    width: 230px;
+    height: 230px; // remove these two lines after implementing the real img
+
+    border-radius: 50%;
+    overflow: hidden;
+  }
 `;
 
 export const Polygons = styled.div`
