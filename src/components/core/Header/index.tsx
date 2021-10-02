@@ -14,7 +14,7 @@ export function Header(): JSX.Element {
           <a href="#/">Sobre mim</a>
           <a href="#/">Habilidades</a>
           <a href="#/">Portfólio</a>
-          <a href="#/">Habilidades</a>
+          <a href="#/">Contato</a>
         </Navigation>
 
         <Underline />
