@@ -61,6 +61,8 @@ export const Avatar = styled.div`
   background-repeat: no-repeat;
   background-position: bottom;
   background-size: 230px;
+
+  box-shadow: 0 3px 7px #1f1f1f;
 `;
 
 export const Polygons = styled.div`
