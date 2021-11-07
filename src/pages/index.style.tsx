@@ -57,6 +57,8 @@ export const Avatar = styled.div`
   height: 240px;
   border-radius: 50%;
 
+  box-shadow: 0 3px 7px #1f1f1f;
+
   background-color: #1f1f1f;
   background-image: url(${ProfileImg});
   background-repeat: no-repeat;
