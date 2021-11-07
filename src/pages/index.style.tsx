@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 import ProfileImg from '../assets/profile_img.png';
+import LeonImg from '../assets/leon_2_lines.jpg';
 
 export const AboutContainer = styled.section`
   display: flex;
@@ -61,6 +62,13 @@ export const Avatar = styled.div`
   background-repeat: no-repeat;
   background-position: bottom;
   background-size: 230px;
+
+  ${AboutContainer}:hover & {
+    background-image: url(${LeonImg});
+    background-position: center;
+  }
+
+  transition: 1s background-image;
 `;
 
 export const Polygons = styled.div`
