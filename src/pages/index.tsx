@@ -4,6 +4,7 @@ import Polygon1 from '../assets/Polygon_1.png';
 import Polygon2 from '../assets/Polygon_2.png';
 
 import { Header } from '../components/core/Header';
+import { Footer } from '../components/core/Footer';
 import { AboutContainer, Avatar, Polygons } from './index.style';
 
 export function Home(): JSX.Element {
@@ -46,6 +47,8 @@ export function Home(): JSX.Element {
           <h3>Belo Horizonte - MG, Brasil</h3>
         </article>
       </AboutContainer>
+
+      <Footer />
     </div>
   );
 }
