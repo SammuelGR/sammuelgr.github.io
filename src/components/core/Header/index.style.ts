@@ -8,14 +8,19 @@ export const Container = styled.header`
   background: #1f1f1f;
   box-shadow: 0 3px 7px #1f1f1f;
 
+  height: 100vh;
   padding-top: 62px;
   padding-left: 112px;
   padding-bottom: 72px;
-  height: 100vh;
+
+  @media (max-width: 720px) {
+    padding-left: 64px;
+  }
 `;
 
 export const Navigation = styled.nav`
   display: flex;
+  flex-wrap: wrap;
   gap: 40px;
 
   a {
@@ -30,6 +35,10 @@ export const Navigation = styled.nav`
       transition: 0.2s color;
     }
   }
+
+  @media (max-width: 720px) {
+    flex-direction: column;
+  }
 `;
 
 export const Underline = styled.div`
@@ -40,6 +49,10 @@ export const Underline = styled.div`
   border: 1px solid #ff6e41;
   border-radius: 4px;
   background-color: #ff6e41;
+
+  @media (max-width: 720px) {
+    display: none;
+  }
 `;
 
 export const Title = styled.h1`

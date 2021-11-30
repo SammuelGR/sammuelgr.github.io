@@ -50,6 +50,22 @@ export const AboutContainer = styled.section`
       text-align: center;
     }
   }
+
+  @media (max-width: 720px) {
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+    padding: 80px 32px;
+
+    article ~ article {
+      margin-left: 0;
+      margin-right: 0;
+    }
+
+    div + h3 {
+      margin-top: 16px;
+    }
+  }
 `;
 
 export const Avatar = styled.div`
@@ -71,6 +87,14 @@ export const Avatar = styled.div`
   }
 
   transition: 1s background-image;
+  @media (max-width: 720px) {
+    width: 160px;
+    height: 160px;
+
+    margin-left: 40px;
+
+    background-size: 150px;
+  }
 `;
 
 export const Polygons = styled.div`
@@ -90,5 +114,16 @@ export const Polygons = styled.div`
 
     position: relative;
     top: 24px;
+  }
+
+  @media (max-width: 720px) {
+    margin-bottom: -160px;
+    margin-left: 40px;
+
+    top: -180px;
+    img {
+      width: 154px;
+      height: 154px;
+    }
   }
 `;

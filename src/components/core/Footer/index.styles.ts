@@ -27,4 +27,12 @@ export const Container = styled.div`
       color: #ff6e41;
     }
   }
+
+  @media (max-width: 720px) {
+    gap: 24px;
+
+    small {
+      font-size: 12px;
+    }
+  }
 `;
