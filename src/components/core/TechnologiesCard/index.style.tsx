@@ -24,7 +24,8 @@ export const Container = styled.div`
     height: 100%;
     align-items: center;
   }
-  section a ~ a {
+
+  section div ~ div {
     margin-left: -32px;
   }
 

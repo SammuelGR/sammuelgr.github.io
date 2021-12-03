@@ -1,5 +1,7 @@
 import { useState } from 'react';
 
+import ReactTooltip from 'react-tooltip';
+
 import { technologies } from '../../../constants/technologies';
 import { Container } from './index.style';
 
@@ -12,18 +14,20 @@ export function TechnologiesCard({ color, title }: Props): JSX.Element {
   const [card] = useState(technologies.find(item => item.title === title));
 
   return (
-    <Container color={color}>
-      <p>{card?.title}</p>
-      <section>
-        {card?.content.map(tech => (
-          <a href={tech.url} target="_blank" rel="noreferrer" key={tech.id}>
-            <div>
-              {/* <img src={NodeIcon} alt={tech.title} /> */}
+    <>
+      <ReactTooltip type="dark" effect="solid" />
+
+      <Container color={color}>
+        <p>{card?.title}</p>
+
+        <section>
+          {card?.content.map(tech => (
+            <div data-tip={tech.title} key={tech.id}>
               <img src={tech.icon} alt={tech.title} />
             </div>
-          </a>
-        ))}
-      </section>
-    </Container>
+          ))}
+        </section>
+      </Container>
+    </>
   );
 }
