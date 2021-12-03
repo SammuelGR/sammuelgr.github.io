@@ -5,7 +5,13 @@ import Polygon2 from '../assets/Polygon_2.png';
 
 import { Header } from '../components/core/Header';
 import { Footer } from '../components/core/Footer';
-import { AboutContainer, Avatar, Polygons } from './index.style';
+import { TechnologiesCard } from '../components/core/TechnologiesCard';
+import {
+  AboutContainer,
+  Avatar,
+  Polygons,
+  ExperienceContainer,
+} from './index.style';
 
 export function Home(): JSX.Element {
   return (
@@ -47,6 +53,12 @@ export function Home(): JSX.Element {
           <h3>Belo Horizonte - MG, Brasil</h3>
         </article>
       </AboutContainer>
+
+      <ExperienceContainer>
+        <TechnologiesCard color="#E441FF" title="Experiente" />
+        <TechnologiesCard color="#5379B2" title="Intermediário" />
+        <TechnologiesCard color="#FF6E41" title="Quero aprender" />
+      </ExperienceContainer>
 
       <Footer />
     </div>

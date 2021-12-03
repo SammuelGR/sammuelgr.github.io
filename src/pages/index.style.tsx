@@ -127,3 +127,14 @@ export const Polygons = styled.div`
     }
   }
 `;
+
+export const ExperienceContainer = styled.section`
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 88px 64px;
+
+  background: #1f1f1f;
+  box-shadow: 0 3px 7px #1f1f1f;
+`;
