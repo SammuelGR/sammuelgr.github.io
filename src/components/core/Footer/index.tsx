@@ -4,9 +4,13 @@ import GithubIcon from '../../../assets/icons/github.png';
 
 import { Container } from './index.styles';
 
-export function Footer(): JSX.Element {
+interface IProps {
+  id: string;
+}
+
+export function Footer({ id }: IProps): JSX.Element {
   return (
-    <Container>
+    <Container id={id}>
       <div>
         <a
           href="https://www.linkedin.com/in/sammuel-reis/"

@@ -12,9 +12,9 @@ export function Header(): JSX.Element {
       <div>
         <Navigation>
           <a href="#AboutMe">Sobre mim</a>
-          <a href="#/">Habilidades</a>
+          <a href="#Experience">Habilidades</a>
           <a href="#/">Portfólio</a>
-          <a href="#/">Contato</a>
+          <a href="#Contact">Contato</a>
         </Navigation>
 
         <Underline />

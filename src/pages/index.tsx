@@ -54,13 +54,13 @@ export function Home(): JSX.Element {
         </article>
       </AboutContainer>
 
-      <ExperienceContainer>
+      <ExperienceContainer id="Experience">
         <TechnologiesCard color="#E441FF" title="Experiente" />
         <TechnologiesCard color="#5379B2" title="Intermediário" />
         <TechnologiesCard color="#FF6E41" title="Quero aprender" />
       </ExperienceContainer>
 
-      <Footer />
+      <Footer id="Contact" />
     </div>
   );
 }
