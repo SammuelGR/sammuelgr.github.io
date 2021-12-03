@@ -54,4 +54,37 @@ export const Container = styled.div`
     box-shadow: 0 0 7px white;
     transform: translateY(-8px);
   }
+
+  @media (max-width: 1076px) and (min-width: 721px) {
+    width: 50%;
+  }
+  @media (max-width: 720px) and (min-width: 561px) {
+    width: 70%;
+  }
+  @media (max-width: 560px) and (min-width: 321px) {
+    width: 100%;
+
+    div {
+      width: 64px;
+      height: 64px;
+
+      img {
+        max-width: 40px;
+        max-height: 40px;
+      }
+    }
+  }
+  @media (max-width: 559px) {
+    width: 100%;
+
+    div {
+      width: 56px;
+      height: 56px;
+
+      img {
+        max-width: 32px;
+        max-height: 32px;
+      }
+    }
+  }
 `;

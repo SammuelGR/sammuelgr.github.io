@@ -137,4 +137,10 @@ export const ExperienceContainer = styled.section`
 
   background: #1f1f1f;
   box-shadow: 0 3px 7px #1f1f1f;
+
+  @media (max-width: 1076px) {
+    flex-direction: column;
+    padding: 24px 48px;
+    gap: 24px;
+  }
 `;
