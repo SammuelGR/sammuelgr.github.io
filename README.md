@@ -22,6 +22,8 @@ O app foi criado com [Create React App](https://pt-br.reactjs.org/docs/create-a-
 
 - [GitHub Pages](https://pages.github.com/): Deploy em cloud do app.
 
+- [React Tooltip](https://www.npmjs.com/package/react-tooltip): Adicionar tooltips aos cards.
+
 ## Deploy
 
 Pra dar uma olhada em como o app tá ficando, subi o projeto usando GitHub Pages nesse link: https://sammuelgr.github.io/ 👀
