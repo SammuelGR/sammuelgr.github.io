@@ -59,6 +59,11 @@ export const Title = styled.h1`
   font-weight: 700;
   font-size: 48px;
   line-height: 57.6px;
+
+  @media (max-width: 720px) {
+    font-size: 34px;
+    line-height: 40.8px;
+  }
 `;
 
 export const Ellipse = styled.div`
@@ -72,4 +77,8 @@ export const Ellipse = styled.div`
 
   background-color: #ff6e41;
   box-shadow: 0 3px 7px #1f1f1f;
+
+  @media (max-width: 720px) {
+    left: 70vw;
+  }
 `;
