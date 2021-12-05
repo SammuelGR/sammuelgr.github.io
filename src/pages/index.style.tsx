@@ -149,6 +149,11 @@ export const GithubContainer = styled.section`
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+
+  @media (max-width: 768px) {
+    flex-direction: column-reverse;
+    padding-top: 40px;
+  }
 `;
 
 export const ReposContainer = styled.div`
@@ -157,7 +162,17 @@ export const ReposContainer = styled.div`
   gap: 20px 40px;
 
   padding: 40px 20px 40px 100px;
+
+  @media (max-width: 1440px) and (min-width: 769px) {
+    padding: 40px 16px 40px 100px;
+  }
+
+  @media (max-width: 768px) {
+    padding: 40px 20px;
+    justify-content: center;
+  }
 `;
+
 export const GithubProfileContainer = styled.div`
   display: flex;
   align-items: center;
@@ -199,5 +214,50 @@ export const GithubProfileContainer = styled.div`
     width: 14px;
 
     margin-right: 5px;
+  }
+
+  @media (max-width: 1192px) and (min-width: 769px) {
+    min-width: 320px;
+
+    img {
+      height: 160px;
+      width: 160px;
+    }
+
+    a {
+      font-size: 24px;
+    }
+
+    p {
+      font-size: 14px;
+    }
+
+    p::before {
+      height: 10px;
+      width: 10px;
+      border-radius: 5px;
+    }
+  }
+
+  @media (max-width: 425px) {
+    min-width: 302px;
+    img {
+      height: 140px;
+      width: 140px;
+    }
+
+    a {
+      font-size: 22px;
+    }
+
+    p {
+      font-size: 14px;
+    }
+
+    p::before {
+      height: 10px;
+      width: 10px;
+      border-radius: 5px;
+    }
   }
 `;

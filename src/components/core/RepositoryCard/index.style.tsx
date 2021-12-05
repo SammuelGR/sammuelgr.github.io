@@ -28,6 +28,34 @@ export const Container = styled.a`
   img ~ span {
     font-weight: 700;
   }
+
+  @media (max-width: 1192px) and (min-width: 769px) {
+    width: 312px;
+    min-height: 148px;
+
+    img ~ span {
+      font-size: 15px;
+    }
+
+    p {
+      font-size: 13px;
+    }
+  }
+
+  @media (max-width: 425px) {
+    img {
+      width: 21px;
+      height: 21px;
+    }
+
+    img ~ span {
+      font-size: 15px;
+    }
+
+    p {
+      font-size: 13px;
+    }
+  }
 `;
 
 export const Topics = styled.div`
@@ -46,5 +74,29 @@ export const Topics = styled.div`
   small {
     font-size: 12px;
     display: inline;
+  }
+
+  @media (max-width: 1192px) and (min-width: 769px) {
+    div > div {
+      height: 10px;
+      width: 10px;
+      border-radius: 5px;
+    }
+
+    small {
+      font-size: 11px;
+    }
+  }
+
+  @media (max-width: 425px) {
+    div > div {
+      height: 10px;
+      width: 10px;
+      border-radius: 5px;
+    }
+
+    small {
+      font-size: 11px;
+    }
   }
 `;
