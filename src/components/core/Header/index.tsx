@@ -13,7 +13,7 @@ export function Header(): JSX.Element {
         <Navigation>
           <a href="#AboutMe">Sobre mim</a>
           <a href="#Experience">Habilidades</a>
-          <a href="#/">Portfólio</a>
+          <a href="#Portfolio">Portfólio</a>
           <a href="#Contact">Contato</a>
         </Navigation>
 

@@ -69,7 +69,7 @@ export function Home(): JSX.Element {
         <TechnologiesCard color="#FF6E41" title="Quero aprender" />
       </ExperienceContainer>
 
-      <GithubContainer>
+      <GithubContainer id="Portfolio">
         <ReposContainer>
           {repos.map(repo => (
             <RepositoryCard key={repo.name} repo={repo} />
