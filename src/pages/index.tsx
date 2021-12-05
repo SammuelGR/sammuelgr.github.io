@@ -3,14 +3,21 @@ import { getSammyAge } from '../utils/dateUtils';
 import Polygon1 from '../assets/Polygon_1.png';
 import Polygon2 from '../assets/Polygon_2.png';
 
-import { Header } from '../components/core/Header';
-import { Footer } from '../components/core/Footer';
-import { TechnologiesCard } from '../components/core/TechnologiesCard';
+import { repos } from '../constants/repos';
+
+import {
+  Header,
+  Footer,
+  TechnologiesCard,
+  RepositoryCard,
+} from '../components/core';
 import {
   AboutContainer,
   Avatar,
   Polygons,
   ExperienceContainer,
+  GithubContainer,
+  ReposContainer,
 } from './index.style';
 
 export function Home(): JSX.Element {
@@ -59,6 +66,17 @@ export function Home(): JSX.Element {
         <TechnologiesCard color="#5379B2" title="Intermediário" />
         <TechnologiesCard color="#FF6E41" title="Quero aprender" />
       </ExperienceContainer>
+
+      <GithubContainer>
+        <ReposContainer>
+          {repos.map(repo => (
+            <RepositoryCard key={repo.name} repo={repo} />
+          ))}
+        </ReposContainer>
+        <div>
+          <p>el contato del github</p>
+        </div>
+      </GithubContainer>
 
       <Footer id="Contact" />
     </div>

@@ -144,3 +144,17 @@ export const ExperienceContainer = styled.section`
     gap: 24px;
   }
 `;
+
+export const GithubContainer = styled.section`
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+`;
+
+export const ReposContainer = styled.div`
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px 40px;
+
+  padding: 40px 100px;
+`;
