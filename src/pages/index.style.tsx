@@ -51,11 +51,20 @@ export const AboutContainer = styled.section`
     }
   }
 
-  @media (max-width: 720px) {
+  @media (max-width: 1023px) {
     flex-direction: column;
     align-items: center;
     gap: 24px;
     padding: 80px 32px;
+
+    article > h1 {
+      font-size: 34px;
+    }
+
+    article > p {
+      font-size: 14px;
+      line-height: 21.84px;
+    }
 
     article ~ article {
       margin-left: 0;
@@ -87,7 +96,8 @@ export const Avatar = styled.div`
   }
 
   transition: 1s background-image;
-  @media (max-width: 720px) {
+
+  @media (max-width: 1023px) {
     width: 160px;
     height: 160px;
 
@@ -116,7 +126,7 @@ export const Polygons = styled.div`
     top: 24px;
   }
 
-  @media (max-width: 720px) {
+  @media (max-width: 1023px) {
     margin-bottom: -160px;
     margin-left: 40px;
 
