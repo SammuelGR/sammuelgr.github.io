@@ -156,5 +156,48 @@ export const ReposContainer = styled.div`
   flex-wrap: wrap;
   gap: 20px 40px;
 
-  padding: 40px 100px;
+  padding: 40px 20px 40px 100px;
+`;
+export const GithubProfileContainer = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  min-width: 360px;
+
+  img {
+    width: 200px;
+    height: 200px;
+  }
+
+  a {
+    font-size: 30px;
+    line-height: 36px;
+    font-weight: 700;
+    color: #fff;
+
+    transition: 0.2s color;
+  }
+
+  a:hover {
+    color: #ccc;
+  }
+
+  p {
+    font-size: 18px;
+    font-weight: 400;
+  }
+
+  p::before {
+    content: '';
+    background: #ff4e16;
+
+    display: inline-block;
+    border-radius: 7px;
+    height: 14px;
+    width: 14px;
+
+    margin-right: 5px;
+  }
 `;

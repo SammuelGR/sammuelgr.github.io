@@ -2,6 +2,7 @@ import { getSammyAge } from '../utils/dateUtils';
 
 import Polygon1 from '../assets/Polygon_1.png';
 import Polygon2 from '../assets/Polygon_2.png';
+import GithubLogo from '../assets/github.svg';
 
 import { repos } from '../constants/repos';
 
@@ -18,6 +19,7 @@ import {
   ExperienceContainer,
   GithubContainer,
   ReposContainer,
+  GithubProfileContainer,
 } from './index.style';
 
 export function Home(): JSX.Element {
@@ -73,9 +75,19 @@ export function Home(): JSX.Element {
             <RepositoryCard key={repo.name} repo={repo} />
           ))}
         </ReposContainer>
-        <div>
-          <p>el contato del github</p>
-        </div>
+
+        <GithubProfileContainer>
+          <img src={GithubLogo} alt="Github logo" />
+          <a
+            href="https://github.com/SammuelGR"
+            target="_blank"
+            rel="noreferrer"
+          >
+            @SammuelGR
+          </a>
+          <p>266 commits</p>
+          <p>43 repositórios</p>
+        </GithubProfileContainer>
       </GithubContainer>
 
       <Footer id="Contact" />
