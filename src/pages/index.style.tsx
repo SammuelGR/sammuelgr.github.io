@@ -64,6 +64,7 @@ export const AboutContainer = styled.section`
     article > p {
       font-size: 14px;
       line-height: 21.84px;
+      text-align: justify;
     }
 
     article ~ article {

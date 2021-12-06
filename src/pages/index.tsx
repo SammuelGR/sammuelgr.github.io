@@ -32,13 +32,24 @@ export function Home(): JSX.Element {
           <h1>Olá!</h1>
 
           <p>
-            Conhecido como Sammy™, tenho {getSammyAge()} anos e comecei a
-            programar em 2016, quando iniciei o curso Técnico de Informática no
-            CEFET-MG. Lá eu participei algumas competições, dentre elas a OBI,
-            CRIA e TICC - essa última sendo interna do Cefet, da qual levei a
-            medalha de prata. Não concluí o curso, porém segui na área e em 2018
-            comecei em desenvolvimento mobile. Logo depois evoluí em web e
-            expandi para o backend, chegando hoje à atuar como FullStack.
+            Conhecido como Sammy™, tenho {getSammyAge()} anos e desenvolvo desde
+            2016, quando iniciei o colegial integrado com Técnico de Informática
+            no CEFET-MG. Lá eu participei de eventos, competições e construí
+            minha base na programação. Em 2018 decidi focar em React e fiz
+            vários cursos, destacando o bootcamp GoStack da Rocketseat onde
+            evoluí muito no ecossistema React e iniciei no backend em NodeJs.
+            Estudei diversas tecnologias como MongoDB, Postgres, TypeORM, Redis
+            e Firebase no backend, React Native com e sem Expo no mobile, e
+            ReactJs pra web. Desde a metade de 2020 atuo como desenvolvedor
+            Fullstack com NodeJs e MongoDB no backend e React no front,
+            incluindo mobile com React Native. Participo da integração de
+            diversos serviços como AWS, Firebase, push notification,
+            autenticação, etc e trabalho com react-hooks, context-api e até
+            Redux em alguns casos. Na estilização uso Styled Components e
+            procuro as principais libs quando necessário (por ex:
+            react-router-dom, react-navigation, Animatable, Axios, etc) e
+            aplicar boas práticas, seguindo os princípios SOLID e buscando a
+            melhor arquitetura pra cada projeto.
           </p>
         </article>
 
