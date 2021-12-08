@@ -24,6 +24,8 @@ O app foi criado com [Create React App](https://pt-br.reactjs.org/docs/create-a-
 
 - [React Tooltip](https://www.npmjs.com/package/react-tooltip): Adicionar tooltips aos cards.
 
+- [Axios](https://www.npmjs.com/package/react-tooltip): Fazer requisições à api REST do GitHub.
+
 ## Deploy
 
 Pra dar uma olhada em como o app tá ficando, subi o projeto usando GitHub Pages nesse link: https://sammuelgr.github.io/ 👀

@@ -1,10 +1,14 @@
+import { useEffect, useState } from 'react';
+
+import { githubApiRest } from '../services/github';
 import { getSammyAge } from '../utils/dateUtils';
+
+import { GET_USER_INFO } from '../constants/endpoints';
+import { repos } from '../constants/repos';
 
 import Polygon1 from '../assets/Polygon_1.png';
 import Polygon2 from '../assets/Polygon_2.png';
 import GithubLogo from '../assets/github.svg';
-
-import { repos } from '../constants/repos';
 
 import {
   Header,
@@ -23,6 +27,24 @@ import {
 } from './index.style';
 
 export function Home(): JSX.Element {
+  const [githubData, setGithubData] = useState({
+    followers: 0,
+    public_repos: 0,
+  });
+
+  async function loadGithubData() {
+    try {
+      const { data } = await githubApiRest.get(`${GET_USER_INFO}/sammuelgr`);
+      setGithubData(data);
+    } catch (err) {
+      throw new Error('Error fetching github data');
+    }
+  }
+
+  useEffect(() => {
+    loadGithubData();
+  }, []);
+
   return (
     <div>
       <Header />
@@ -96,8 +118,8 @@ export function Home(): JSX.Element {
           >
             @SammuelGR
           </a>
-          <p>266 commits</p>
-          <p>43 repositórios</p>
+          <p>{githubData.followers} seguidores</p>
+          <p>{githubData.public_repos} repositórios</p>
         </GithubProfileContainer>
       </GithubContainer>
 
