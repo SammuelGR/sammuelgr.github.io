@@ -24,7 +24,7 @@ O app foi criado com [Create React App](https://pt-br.reactjs.org/docs/create-a-
 
 - [React Tooltip](https://www.npmjs.com/package/react-tooltip): Adicionar tooltips aos cards.
 
-- [Axios](https://www.npmjs.com/package/react-tooltip): Fazer requisições à api REST do GitHub.
+- [Axios](https://axios-http.com/): Fazer requisições à api REST do GitHub.
 
 ## Deploy
 
