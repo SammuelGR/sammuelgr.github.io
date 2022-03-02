@@ -18,40 +18,45 @@ export const Container = styled.header`
   }
 `;
 
+const fontSize = 16;
+
 export const Navigation = styled.nav`
   display: flex;
   flex-wrap: wrap;
   gap: 40px;
 
   a {
-    font-size: 16px;
+    font-size: ${fontSize}px;
     font-weight: 700;
     color: #fff;
     line-height: 19.2px;
 
-    &:hover {
-      color: #ccc;
+    position: relative;
 
-      transition: 0.2s color;
+    :after {
+      content: '';
+      position: absolute;
+      top: calc(${fontSize}px + 10px);
+      left: 0;
+
+      width: 100%;
+      border: 1px solid #ff6e41;
+      background-color: #ff6e41;
+
+      visibility: hidden;
+    }
+
+    &:hover {
+      @media (min-width: 721px) {
+        &:after {
+          visibility: visible;
+        }
+      }
     }
   }
 
   @media (max-width: 720px) {
     flex-direction: column;
-  }
-`;
-
-export const Underline = styled.div`
-  margin-top: 10px;
-  width: 221px;
-  height: 5px;
-
-  border: 1px solid #ff6e41;
-  border-radius: 4px;
-  background-color: #ff6e41;
-
-  @media (max-width: 720px) {
-    display: none;
   }
 `;
 
