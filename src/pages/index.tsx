@@ -27,6 +27,8 @@ import {
 } from './index.style';
 
 export function Home(): JSX.Element {
+  const [myAge, setMyAge] = useState(0);
+
   const [githubData, setGithubData] = useState({
     followers: 0,
     public_repos: 0,
@@ -45,6 +47,10 @@ export function Home(): JSX.Element {
     loadGithubData();
   }, []);
 
+  useEffect(() => {
+    setMyAge(getSammyAge());
+  }, []);
+
   return (
     <div>
       <Header />
@@ -54,14 +60,14 @@ export function Home(): JSX.Element {
           <h1>Olá!</h1>
 
           <p>
-            Conhecido como Sammy™, tenho {getSammyAge()} anos e desenvolvo desde
-            2016, quando iniciei o colegial integrado com Técnico de Informática
-            no CEFET-MG. Lá eu participei de eventos, competições e construí
-            minha base na programação. Em 2018 decidi focar em React e fiz
-            vários cursos, destacando o bootcamp GoStack da Rocketseat onde
-            evoluí muito no ecossistema React e iniciei no backend em NodeJs.
-            Estudei diversas tecnologias como MongoDB, Postgres, TypeORM, Redis
-            e Firebase no backend, React Native com e sem Expo no mobile, e
+            Conhecido como Sammy™, tenho {myAge} anos e desenvolvo desde 2016,
+            quando iniciei o colegial integrado com Técnico de Informática no
+            CEFET-MG. Lá eu participei de eventos, competições e construí minha
+            base na programação. Em 2018 decidi focar em React e fiz vários
+            cursos, destacando o bootcamp GoStack da Rocketseat onde evoluí
+            muito no ecossistema React e iniciei no backend em NodeJs. Estudei
+            diversas tecnologias como MongoDB, Postgres, TypeORM, Redis e
+            Firebase no backend, React Native com e sem Expo no mobile, e
             ReactJs pra web. Desde a metade de 2020 atuo como desenvolvedor
             Fullstack com NodeJs e MongoDB no backend e React no front,
             incluindo mobile com React Native. Participo da integração de

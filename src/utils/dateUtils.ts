@@ -1,9 +1,11 @@
 export function getSammyAge(): number {
   const today = new Date();
-  let age = today.getFullYear() - 2000;
-  const m = today.getMonth() - 2;
-  if (m < 0 || (m === 0 && today.getDate() < 1)) {
-    age--;
-  }
+  const currentMonth = today.getMonth() + 1; // 1 ~ 12
+  const currentYear = today.getFullYear();
+
+  let age = currentYear - 2000;
+
+  if (currentMonth === 1) age--;
+
   return age;
 }
