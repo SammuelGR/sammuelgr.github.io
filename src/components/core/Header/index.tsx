@@ -1,18 +1,32 @@
-import { Container, Ellipse, Navigation, Title } from './index.style';
+import { FormattedMessage } from 'react-intl';
+
+import { Container, Ellipse, Navigation, Title } from './styles';
 
 export function Header(): JSX.Element {
   return (
     <Container>
       <Navigation>
-        <a href="#AboutMe">Sobre mim</a>
-        <a href="#Experience">Habilidades</a>
-        <a href="#Portfolio">Portfólio</a>
-        <a href="#Contact">Contato</a>
+        <a href="#AboutMe">
+          <FormattedMessage id="home.header.button.about_me" />
+        </a>
+
+        <a href="#Experience">
+          <FormattedMessage id="home.header.button.experience" />
+        </a>
+
+        <a href="#Portfolio">
+          <FormattedMessage id="home.header.button.portfolio" />
+        </a>
+
+        <a href="#Contact">
+          <FormattedMessage id="home.header.button.contact" />
+        </a>
       </Navigation>
 
       <div>
-        <Title>Sammuel</Title>
-        <Title>Reis</Title>
+        <Title>
+          <FormattedMessage id="home.header.title" />
+        </Title>
       </div>
 
       <Ellipse />
