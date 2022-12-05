@@ -1,7 +1,11 @@
 {
+  "home.about_me.description": "Conhecido como Sammy™, tenho {age} anos e desenvolvo desde 2016, quando iniciei o colegial integrado com Técnico de Informática no CEFET-MG. Lá eu participei de eventos, competições e construí minha base na programação. Em 2018 decidi focar em React e fiz vários cursos, destacando o bootcamp GoStack da Rocketseat onde evoluí muito no ecossistema React e iniciei no backend em NodeJs. Estudei diversas tecnologias como MongoDB, Postgres, TypeORM, Redis e Firebase no backend, React Native com e sem Expo no mobile, e ReactJs pra web. Desde a metade de 2020 atuo como desenvolvedor Fullstack com NodeJs e MongoDB no backend e React no front, incluindo mobile com React Native. Participo da integração de diversos serviços como AWS, Firebase, push notification, autenticação, etc e trabalho com react-hooks, context-api e até Redux em alguns casos. Na estilização uso Styled Components e procuro as principais libs quando necessário (por ex: react-router-dom, react-navigation, Animatable, Axios, etc) e aplicar boas práticas, seguindo os princípios SOLID e buscando a melhor arquitetura pra cada projeto.",
+  "home.about_me.location": "Belo Horizonte - MG, Brasil",
+  "home.about_me.title": "Olá!",
+  "home.about_me.workplace": "Ripio",
   "home.header.button.about_me": "Sobre mim",
+  "home.header.button.contact": "Contato",
   "home.header.button.experience": "Habilidades",
   "home.header.button.portfolio": "Portfólio",
-  "home.header.button.contact": "Contato",
   "home.header.title": "Sammuel Reis"
 }

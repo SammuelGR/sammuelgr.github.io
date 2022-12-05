@@ -4,7 +4,7 @@ import { IntlProvider } from 'react-intl';
 
 import './index.css';
 import localeMessages from './locales/pt-BR.json';
-import { Home } from './pages';
+import { Home } from './pages/Home';
 
 ReactDOM.render(
   <React.StrictMode>
