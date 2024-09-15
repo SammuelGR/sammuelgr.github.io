@@ -1,4 +1,3 @@
-import { useEffect, useState } from 'react';
 import { FormattedMessage } from 'react-intl';
 
 import Polygon1 from '../../../assets/Polygon_1.png';
@@ -7,13 +6,9 @@ import { getSammyAge } from '../../../utils/dateUtils';
 
 import { Container, Avatar, Polygons } from './styles';
 
+const myAge = getSammyAge();
+
 const About = (): JSX.Element => {
-  const [myAge, setMyAge] = useState<number>(0);
-
-  useEffect(() => {
-    setMyAge(getSammyAge());
-  }, []);
-
   return (
     <Container id="AboutMe">
       <article>
