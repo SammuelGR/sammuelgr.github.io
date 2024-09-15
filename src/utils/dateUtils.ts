@@ -13,7 +13,7 @@ export function getSammyAge(): number {
 export function isSundayNight(): boolean {
   const today = new Date();
 
-  if (today.getDay() === 0 && today.getHours() > 18) {
+  if (today.getDay() === 0 && today.getHours() >= 18) {
     return true;
   }
 
