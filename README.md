@@ -47,3 +47,5 @@ Usando a funcionalidade do GitHub de criar um projeto com o mesmo link da sua co
 - Acesse http://localhost:3000/ para visualizar o app (o link pode variar, verifique no terminal).
 
 O código atualizado estará sempre na branch master. Num breve futuro, também disponibilizarei o link com o Figma do projeto (se a designer permitir rs).
+
+NODE_OPTIONS=--openssl-legacy-provider ☠️

@@ -1,10 +1,13 @@
 import { FormattedMessage } from 'react-intl';
 
 import { Container, Ellipse, Navigation, Title } from './styles';
+import { isSundayNight } from '../../../utils/dateUtils';
 
 export function Header(): JSX.Element {
+  const showSundayNight = isSundayNight();
+
   return (
-    <Container>
+    <Container showSundayNight={showSundayNight}>
       <Navigation>
         <a href="#AboutMe">
           <FormattedMessage id="home.header.button.about_me" />

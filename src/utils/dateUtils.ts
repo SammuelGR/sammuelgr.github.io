@@ -9,3 +9,13 @@ export function getSammyAge(): number {
 
   return age;
 }
+
+export function isSundayNight(): boolean {
+  const today = new Date();
+
+  if (today.getDay() === 0 && today.getHours() > 18) {
+    return true;
+  }
+
+  return false;
+}

@@ -1,6 +1,12 @@
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
 
-export const Container = styled.header`
+import LoboImage from '../../../assets/doming-a-noite.jpg';
+
+interface HeaderProps extends React.HTMLAttributes<HTMLHeadElement> {
+  showSundayNight: boolean;
+}
+
+export const Container = styled.header<HeaderProps>`
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -16,6 +22,20 @@ export const Container = styled.header`
   @media (max-width: 720px) {
     padding-left: 64px;
   }
+
+  ${({ showSundayNight }: HeaderProps) =>
+    showSundayNight &&
+    css`
+      background-image: url(${LoboImage});
+      background-position: top;
+      background-repeat: no-repeat;
+      background-size: contain;
+
+      @media (min-width: 1024px) {
+        background-position: center;
+        background-size: cover;
+      }
+    `}
 `;
 
 const fontSize = 16;
