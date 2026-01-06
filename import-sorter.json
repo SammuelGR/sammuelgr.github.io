@@ -1,0 +1,31 @@
+{
+  "importStringConfiguration": {
+    "quoteMark": "single",
+    "hasSemicolon": true,
+    "numberOfEmptyLinesAfterAllImports": 1
+  },
+  "sortConfiguration": {
+    "joinImportPaths": true,
+    "removeUnusedImports": true,
+    "customOrderingRules": {
+      "defaultOrderLevel": 20,
+      "defaultNumberOfEmptyLinesAfterGroup": 1,
+      "rules": [
+        {
+          "type": "importMember",
+          "regex": "^$",
+          "orderLevel": 10,
+          "disableSort": true
+        },
+        {
+          "regex": "^(assets|components|constants|locales|pages|services|utils)(/|$)",
+          "orderLevel": 30
+        },
+        {
+          "regex": "^[.]",
+          "orderLevel": 40
+        }
+      ]
+    }
+  }
+}
