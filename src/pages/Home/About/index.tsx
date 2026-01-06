@@ -3,8 +3,7 @@ import { FormattedMessage } from 'react-intl';
 import Polygon1 from '../../../assets/Polygon_1.png';
 import Polygon2 from '../../../assets/Polygon_2.png';
 import { getSammyAge } from '../../../utils/dateUtils';
-
-import { Container, Avatar, Polygons } from './styles';
+import { Avatar, Container, Polygons } from './styles';
 
 const myAge = getSammyAge();
 
@@ -33,13 +32,7 @@ const About = (): JSX.Element => {
         </Polygons>
 
         <h3>
-          <a href="https://www.ripio.com/br/" rel="noreferrer" target="_blank">
-            <FormattedMessage id="home.about_me.workplace" />
-          </a>
-        </h3>
-
-        <h3>
-          <FormattedMessage id="home.about_me.location" />
+          <FormattedMessage id="home.about_me.position" />
         </h3>
       </article>
     </Container>

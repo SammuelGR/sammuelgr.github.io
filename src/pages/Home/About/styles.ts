@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
-import ProfileImg from '../../../assets/profile_img.png';
 import LeonImg from '../../../assets/leon_2_lines.jpg';
+import ProfileImg from '../../../assets/profile_img.png';
 
 export const Container = styled.section`
   display: flex;
@@ -23,19 +23,6 @@ export const Container = styled.section`
       line-height: 24.96px;
     }
 
-    a {
-      color: #e5e5e5;
-      font-size: 16px;
-      font-weight: 600;
-      line-height: 19.2px;
-
-      &:hover {
-        color: #c39bf3;
-        text-shadow: 1px 1px 1px #6d07e6;
-        transition: 0.2s color;
-      }
-    }
-
     + article {
       margin-left: 120px;
       margin-right: 64px;
@@ -54,16 +41,16 @@ export const Container = styled.section`
     align-items: center;
     flex-direction: column;
     gap: 24px;
-    padding: 80px 32px;
+    padding: 48px;
 
     article > h1 {
       font-size: 34px;
     }
 
     article > p {
-      font-size: 14px;
+      font-size: 13px;
       line-height: 21.84px;
-      text-align: justify;
+      text-align: left;
     }
 
     article ~ article {
@@ -80,7 +67,7 @@ export const Container = styled.section`
 export const Avatar = styled.div`
   background-color: #1f1f1f;
   background-image: url(${ProfileImg});
-  background-position: bottom;
+  background-position: center;
   background-repeat: no-repeat;
   background-size: 230px;
   border-radius: 50%;
@@ -91,7 +78,6 @@ export const Avatar = styled.div`
 
   ${Container} > article:hover & {
     background-image: url(${LeonImg});
-    background-position: center;
   }
 
   @media (max-width: 1023px) {
