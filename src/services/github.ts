@@ -15,7 +15,12 @@ const fetchRepo = async (name: string): Promise<GithubRepo> => {
 };
 
 export const fetchAllRepos = async (): Promise<GithubRepo[]> => {
-  return Promise.all(repos.map(fetchRepo));
+  const results = await Promise.allSettled(repos.map(fetchRepo));
+
+  return results.reduce<GithubRepo[]>((acc, curr) => {
+    if (curr.status === 'fulfilled') acc.push(curr.value);
+    return acc;
+  }, []);
 };
 
 interface ProfileDataResponse {
