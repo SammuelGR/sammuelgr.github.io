@@ -18,7 +18,7 @@
           "disableSort": true
         },
         {
-          "regex": "^(assets|components|constants|locales|pages|services|utils)(/|$)",
+          "regex": "^(assets|components|constants|hooks|locales|models|pages|services|utils)(/|$)",
           "orderLevel": 30
         },
         {

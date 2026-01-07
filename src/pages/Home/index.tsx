@@ -1,34 +1,10 @@
-import { useEffect, useState } from 'react';
-
-import GithubLogo from 'assets/github.svg';
-import { Footer, Header, RepositoryCard } from 'components/core';
-import { GET_USER_INFO } from 'constants/endpoints';
-import { repos } from 'constants/repos';
-import { githubApiRest } from 'services/github';
+import { Footer, Header } from 'components/core';
 
 import AboutSection from './About';
 import ExperienceSection from './Experience';
-import { GithubContainer, GithubProfileContainer, ReposContainer } from './styles';
+import GitHubSection from './GitHub';
 
 export function Home(): JSX.Element {
-  const [githubData, setGithubData] = useState({
-    followers: 0,
-    public_repos: 0,
-  });
-
-  async function loadGithubData() {
-    try {
-      const { data } = await githubApiRest.get(`${GET_USER_INFO}/sammuelgr`);
-      setGithubData(data);
-    } catch (err) {
-      throw new Error('Error fetching github data');
-    }
-  }
-
-  useEffect(() => {
-    loadGithubData();
-  }, []);
-
   return (
     <div>
       <Header />
@@ -37,22 +13,7 @@ export function Home(): JSX.Element {
 
       <ExperienceSection />
 
-      <GithubContainer id="Portfolio">
-        <ReposContainer>
-          {repos.map(repo => (
-            <RepositoryCard key={repo.name} repo={repo} />
-          ))}
-        </ReposContainer>
-
-        <GithubProfileContainer>
-          <img src={GithubLogo} alt="Github logo" />
-          <a href="https://github.com/SammuelGR" target="_blank" rel="noreferrer">
-            @SammuelGR
-          </a>
-          <p>{githubData.followers} seguidores</p>
-          <p>{githubData.public_repos} repositórios</p>
-        </GithubProfileContainer>
-      </GithubContainer>
+      <GitHubSection />
 
       <Footer id="Contact" />
     </div>

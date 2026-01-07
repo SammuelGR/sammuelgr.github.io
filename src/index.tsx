@@ -1,19 +1,30 @@
+import './index.css';
+
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { IntlProvider } from 'react-intl';
+import { QueryClient, QueryClientProvider } from 'react-query';
 
-import './index.css';
 import localeMessages from './locales/pt-BR.json';
 import { Home } from './pages/Home';
 
+const queryClient = new QueryClient({
+  defaultOptions: {
+    queries: {
+      staleTime: 1000 * 60 * 60, // 1h
+      cacheTime: 1000 * 60 * 60 * 24, // 24h
+      retry: 1,
+      refetchOnWindowFocus: false,
+    },
+  },
+});
+
 ReactDOM.render(
   <React.StrictMode>
-    <IntlProvider
-      defaultLocale="pt-BR"
-      locale="pt-BR"
-      messages={localeMessages}
-    >
-      <Home />
+    <IntlProvider defaultLocale="pt-BR" locale="pt-BR" messages={localeMessages}>
+      <QueryClientProvider client={queryClient}>
+        <Home />
+      </QueryClientProvider>
     </IntlProvider>
   </React.StrictMode>,
   document.getElementById('root'),

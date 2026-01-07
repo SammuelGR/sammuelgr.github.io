@@ -20,41 +20,32 @@ export const Container = styled.a`
   }
 
   img {
-    width: 24px;
-    height: 24px;
-    margin-right: 8px;
+    width: 21px;
+    height: 21px;
   }
 
   img ~ span {
     font-weight: 700;
+    font-size: 15px;
   }
 
-  @media (max-width: 1192px) and (min-width: 769px) {
+  p {
+    font-size: 13px;
+  }
+
+  @media (min-width: 769px) {
     width: 312px;
-    min-height: 148px;
-
-    img ~ span {
-      font-size: 15px;
-    }
-
-    p {
-      font-size: 13px;
-    }
+    min-height: 160px;
   }
 
-  @media (max-width: 425px) {
-    img {
-      width: 21px;
-      height: 21px;
-    }
+  p {
+    font-size: 14px;
+  }
 
-    img ~ span {
-      font-size: 15px;
-    }
+  transition: box-shadow 0.1s ease-in-out;
 
-    p {
-      font-size: 13px;
-    }
+  &:hover {
+    box-shadow: 0 0 5px #ff6e41;
   }
 `;
 
@@ -72,11 +63,11 @@ export const Topics = styled.div`
   }
 
   small {
-    font-size: 12px;
+    font-size: 11px;
     display: inline;
   }
 
-  @media (max-width: 1192px) and (min-width: 769px) {
+  @media (min-width: 769px) {
     div > div {
       height: 10px;
       width: 10px;
@@ -84,19 +75,7 @@ export const Topics = styled.div`
     }
 
     small {
-      font-size: 11px;
-    }
-  }
-
-  @media (max-width: 425px) {
-    div > div {
-      height: 10px;
-      width: 10px;
-      border-radius: 5px;
-    }
-
-    small {
-      font-size: 11px;
+      font-size: 12px;
     }
   }
 `;
