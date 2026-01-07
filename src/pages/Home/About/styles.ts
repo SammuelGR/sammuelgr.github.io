@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
-import LeonImg from '../../../assets/leon_2_lines.jpg';
-import ProfileImg from '../../../assets/profile_img.png';
+import LeonImg from 'assets/leon_2_lines.jpg';
+import ProfileImg from 'assets/profile_img.png';
 
 export const Container = styled.section`
   display: flex;

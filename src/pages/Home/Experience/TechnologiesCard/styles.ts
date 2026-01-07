@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export const Container = styled.div`
-  width: 30%;
+  width: 100%;
   height: 184px;
   padding: 24px;
 
@@ -35,8 +35,8 @@ export const Container = styled.div`
     justify-content: center;
     text-align: center;
 
-    width: 72px;
-    height: 72px;
+    height: 56px;
+    width: 56px;
 
     background: #414141;
     border-radius: 36px;
@@ -45,8 +45,8 @@ export const Container = styled.div`
     transition: 0.3s transform;
 
     img {
-      max-width: 48px;
-      max-height: 48px;
+      max-width: 32px;
+      max-height: 32px;
     }
   }
 
@@ -55,13 +55,7 @@ export const Container = styled.div`
     transform: translateY(-8px);
   }
 
-  @media (max-width: 1076px) and (min-width: 721px) {
-    width: 50%;
-  }
-  @media (max-width: 720px) and (min-width: 561px) {
-    width: 70%;
-  }
-  @media (max-width: 560px) and (min-width: 321px) {
+  @media (min-width: 420px) and (max-width: 599px) {
     width: 100%;
 
     div {
@@ -74,16 +68,29 @@ export const Container = styled.div`
       }
     }
   }
-  @media (max-width: 559px) {
-    width: 100%;
+
+  @media (min-width: 600px) and (max-width: 1199px) {
+    width: 70%;
 
     div {
-      width: 56px;
-      height: 56px;
+      width: 64px;
+      height: 64px;
 
       img {
-        max-width: 32px;
-        max-height: 32px;
+        max-width: 40px;
+        max-height: 40px;
+      }
+    }
+  }
+
+  @media (min-width: 1200px) {
+    div {
+      width: 72px;
+      height: 72px;
+
+      img {
+        max-width: 48px;
+        max-height: 48px;
       }
     }
   }

@@ -1,8 +1,9 @@
 import { FormattedMessage } from 'react-intl';
 
-import Polygon1 from '../../../assets/Polygon_1.png';
-import Polygon2 from '../../../assets/Polygon_2.png';
-import { getSammyAge } from '../../../utils/dateUtils';
+import Polygon1 from 'assets/Polygon_1.png';
+import Polygon2 from 'assets/Polygon_2.png';
+import { getSammyAge } from 'utils/dateUtils';
+
 import { Avatar, Container, Polygons } from './styles';
 
 const myAge = getSammyAge();
@@ -16,10 +17,7 @@ const About = (): JSX.Element => {
         </h1>
 
         <p>
-          <FormattedMessage
-            id="home.about_me.description"
-            values={{ age: myAge }}
-          />
+          <FormattedMessage id="home.about_me.description" values={{ age: myAge }} />
         </p>
       </article>
 

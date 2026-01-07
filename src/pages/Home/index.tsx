@@ -1,23 +1,14 @@
 import { useEffect, useState } from 'react';
 
-import GithubLogo from '../../assets/github.svg';
-import {
-  Header,
-  Footer,
-  TechnologiesCard,
-  RepositoryCard,
-} from '../../components/core';
-import { GET_USER_INFO } from '../../constants/endpoints';
-import { repos } from '../../constants/repos';
-import { githubApiRest } from '../../services/github';
+import GithubLogo from 'assets/github.svg';
+import { Footer, Header, RepositoryCard } from 'components/core';
+import { GET_USER_INFO } from 'constants/endpoints';
+import { repos } from 'constants/repos';
+import { githubApiRest } from 'services/github';
 
 import AboutSection from './About';
-import {
-  ExperienceContainer,
-  GithubContainer,
-  ReposContainer,
-  GithubProfileContainer,
-} from './styles';
+import ExperienceSection from './Experience';
+import { GithubContainer, GithubProfileContainer, ReposContainer } from './styles';
 
 export function Home(): JSX.Element {
   const [githubData, setGithubData] = useState({
@@ -44,11 +35,7 @@ export function Home(): JSX.Element {
 
       <AboutSection />
 
-      <ExperienceContainer id="Experience">
-        <TechnologiesCard color="#E441FF" title="Experiente" />
-        <TechnologiesCard color="#5379B2" title="Intermediário" />
-        <TechnologiesCard color="#FF6E41" title="Quero aprender" />
-      </ExperienceContainer>
+      <ExperienceSection />
 
       <GithubContainer id="Portfolio">
         <ReposContainer>
@@ -59,11 +46,7 @@ export function Home(): JSX.Element {
 
         <GithubProfileContainer>
           <img src={GithubLogo} alt="Github logo" />
-          <a
-            href="https://github.com/SammuelGR"
-            target="_blank"
-            rel="noreferrer"
-          >
+          <a href="https://github.com/SammuelGR" target="_blank" rel="noreferrer">
             @SammuelGR
           </a>
           <p>{githubData.followers} seguidores</p>
