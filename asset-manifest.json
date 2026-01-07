@@ -1,19 +1,18 @@
 {
   "files": {
     "main.css": "/static/css/main.c280d118.chunk.css",
-    "main.js": "/static/js/main.40626ea0.chunk.js",
-    "main.js.map": "/static/js/main.40626ea0.chunk.js.map",
+    "main.js": "/static/js/main.c297ff1f.chunk.js",
+    "main.js.map": "/static/js/main.c297ff1f.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.e699fdb3.js",
     "runtime-main.js.map": "/static/js/runtime-main.e699fdb3.js.map",
-    "static/js/2.b494e9a4.chunk.js": "/static/js/2.b494e9a4.chunk.js",
-    "static/js/2.b494e9a4.chunk.js.map": "/static/js/2.b494e9a4.chunk.js.map",
+    "static/js/2.ca234f6b.chunk.js": "/static/js/2.ca234f6b.chunk.js",
+    "static/js/2.ca234f6b.chunk.js.map": "/static/js/2.ca234f6b.chunk.js.map",
     "index.html": "/index.html",
     "static/css/main.c280d118.chunk.css.map": "/static/css/main.c280d118.chunk.css.map",
-    "static/js/2.b494e9a4.chunk.js.LICENSE.txt": "/static/js/2.b494e9a4.chunk.js.LICENSE.txt",
-    "static/media/aws-icon.1baaa078.svg": "/static/media/aws-icon.1baaa078.svg",
-    "static/media/docker-icon.f13de5f9.svg": "/static/media/docker-icon.f13de5f9.svg",
+    "static/js/2.ca234f6b.chunk.js.LICENSE.txt": "/static/js/2.ca234f6b.chunk.js.LICENSE.txt",
+    "static/media/bitcoin-icon.e25496aa.svg": "/static/media/bitcoin-icon.e25496aa.svg",
     "static/media/doming-a-noite.b6b0ec5e.jpg": "/static/media/doming-a-noite.b6b0ec5e.jpg",
-    "static/media/firebase-icon.276e1103.svg": "/static/media/firebase-icon.276e1103.svg",
+    "static/media/ethers-icon.4f96e66f.svg": "/static/media/ethers-icon.4f96e66f.svg",
     "static/media/gitfork.f3c274e0.svg": "/static/media/gitfork.f3c274e0.svg",
     "static/media/github.e0d7d725.svg": "/static/media/github.e0d7d725.svg",
     "static/media/jest-icon.a4aba16f.svg": "/static/media/jest-icon.a4aba16f.svg",
@@ -21,17 +20,21 @@
     "static/media/mongodb-icon.1aca075d.svg": "/static/media/mongodb-icon.1aca075d.svg",
     "static/media/nextjs-icon.81461ea0.svg": "/static/media/nextjs-icon.81461ea0.svg",
     "static/media/nodejs-icon.615ffbea.svg": "/static/media/nodejs-icon.615ffbea.svg",
-    "static/media/profile_img.c26a99e0.png": "/static/media/profile_img.c26a99e0.png",
+    "static/media/postgresql-icon.ae92b576.svg": "/static/media/postgresql-icon.ae92b576.svg",
+    "static/media/profile_img.7d8c432f.png": "/static/media/profile_img.7d8c432f.png",
     "static/media/react-icon.e68b35f4.svg": "/static/media/react-icon.e68b35f4.svg",
-    "static/media/redux-icon.0e4fb1c8.svg": "/static/media/redux-icon.0e4fb1c8.svg",
-    "static/media/sass-icon.8aa78a83.svg": "/static/media/sass-icon.8aa78a83.svg",
+    "static/media/rust-icon.60bc17af.svg": "/static/media/rust-icon.60bc17af.svg",
+    "static/media/solidity-icon.742e4357.svg": "/static/media/solidity-icon.742e4357.svg",
+    "static/media/styled-components.6e34e546.svg": "/static/media/styled-components.6e34e546.svg",
+    "static/media/tailwindcss-icon.79614a5f.svg": "/static/media/tailwindcss-icon.79614a5f.svg",
+    "static/media/tanstack-icon.668e69f7.svg": "/static/media/tanstack-icon.668e69f7.svg",
     "static/media/typescript-icon.a6305a73.svg": "/static/media/typescript-icon.a6305a73.svg",
-    "static/media/webpack-icon.f44900ae.svg": "/static/media/webpack-icon.f44900ae.svg"
+    "static/media/vite-icon.99652122.svg": "/static/media/vite-icon.99652122.svg"
   },
   "entrypoints": [
     "static/js/runtime-main.e699fdb3.js",
-    "static/js/2.b494e9a4.chunk.js",
+    "static/js/2.ca234f6b.chunk.js",
     "static/css/main.c280d118.chunk.css",
-    "static/js/main.40626ea0.chunk.js"
+    "static/js/main.c297ff1f.chunk.js"
   ]
 }
