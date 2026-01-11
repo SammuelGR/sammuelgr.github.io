@@ -1,51 +1,43 @@
-# Sammuel original old good vibration
+# Sammy™️ original old good vibration 🕊️🍃
 
-Criei esse repo principalmente pra praticar React em um projeto pessoal, além de usar como portfólio.
-
-- [Pacotes utilizados](#pacotes-utilizados)
-
-- [Deploy](#deploy)
-
-- [Executar projeto](#executar-projeto)
+Site pessoal e portfólio.
 
 ---
 
-## Pacotes Utilizados
-
-O app foi criado com [Create React App](https://pt-br.reactjs.org/docs/create-a-new-react-app.html) com template typescript. Abaixo as principais libs utilizadas até o momento:
-
-- [Eslint](https://eslint.org) em conjunto com AirBnB JS Style Guide: lint de código.
-
-- [Prettier](https://prettier.io/) complementando o eslint: código melhor estruturado.
-
-- [Styled Components](https://styled-components.com/): Estilização do projeto.
-
-- [GitHub Pages](https://pages.github.com/): Deploy em cloud do app.
-
-- [React Tooltip](https://www.npmjs.com/package/react-tooltip): Adicionar tooltips aos cards.
-
-- [Axios](https://axios-http.com/): Fazer requisições à api REST do GitHub.
-
 ## Deploy
 
-Pra dar uma olhada em como o app tá ficando, subi o projeto usando GitHub Pages nesse link: https://sammuelgr.github.io/ 👀
+Deploy feito com GitHub Pages: https://sammuelgr.github.io/
 
-Usando a funcionalidade do GitHub de criar um projeto com o mesmo link da sua conta, pra assim poder encurtar a url.
+[Link do Figma](https://www.figma.com/design/KQINoympLpiK8l3hMsZ180/sammy)
+
+## Stack
+
+- React
+- TypeScript
+- Vite
+- Styled Components
+- ESLint
+- Prettier
+- Axios
+- React Query
+- React Tooltip
+- React Intl
+- GitHub REST API pra puxar dados dos repositórios
 
 ## Executar projeto
 
-> Para desenvolvedores.
+### Requisitos
 
-É necessário ter [Node](https://nodejs.org/en/) instalado. Como opcional, recomendo [Yarn](https://yarnpkg.com/) também!
+- [Node](https://nodejs.org/en/)
 
-- Clone / download este repositório.
+- npm ou [Yarn](https://yarnpkg.com/)
 
-- Execute o comando `npm install` ou `yarn` na pasta do projeto para instalar as dependências.
+### Passos
 
-- `npm run start` ou `yarn start` para iniciar o packager.
+- Clone / download do repositório: `git clone https://github.com/SammuelGR/sammuelgr.github.io.git`
 
-- Acesse http://localhost:3000/ para visualizar o app (o link pode variar, verifique no terminal).
+- Execute o comando `npm install` ou `yarn` na pasta raiz do projeto para instalar as dependências.
 
-O código atualizado estará sempre na branch master. Num breve futuro, também disponibilizarei o link com o Figma do projeto (se a designer permitir rs).
+- `npm run dev` ou `yarn dev` para iniciar o packager.
 
-NODE_OPTIONS=--openssl-legacy-provider ☠️
+- Verifique no terminal a URL gerada para acessar o app.
