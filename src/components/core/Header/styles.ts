@@ -3,7 +3,7 @@ import styled, { css } from 'styled-components';
 import LoboImage from '../../../assets/doming-a-noite.jpg';
 
 interface HeaderProps extends React.HTMLAttributes<HTMLHeadElement> {
-  showSundayNight: boolean;
+  $showSundayNight: boolean;
 }
 
 export const Container = styled.header<HeaderProps>`
@@ -23,8 +23,8 @@ export const Container = styled.header<HeaderProps>`
     padding-left: 64px;
   }
 
-  ${({ showSundayNight }: HeaderProps) =>
-    showSundayNight &&
+  ${({ $showSundayNight }: HeaderProps) =>
+    $showSundayNight &&
     css`
       background-image: url(${LoboImage});
       background-position: top;

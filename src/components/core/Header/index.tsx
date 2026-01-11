@@ -7,7 +7,7 @@ export function Header(): JSX.Element {
   const showSundayNight = isSundayNight();
 
   return (
-    <Container showSundayNight={showSundayNight}>
+    <Container $showSundayNight={showSundayNight}>
       <Navigation>
         <a href="#AboutMe">
           <FormattedMessage id="home.header.button.about_me" />

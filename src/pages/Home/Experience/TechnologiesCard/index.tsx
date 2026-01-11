@@ -1,4 +1,4 @@
-import ReactTooltip from 'react-tooltip';
+import {Tooltip as ReactTooltip} from 'react-tooltip';
 
 import { technologies } from 'constants/technologies';
 
@@ -12,17 +12,23 @@ interface Props {
 
 export function TechnologiesCard({ color, title, type }: Props): JSX.Element {
   const techGroup = technologies.find(({ type: techType }) => techType === type);
+  const tooltipId = `technologies-tooltip-${type}`;
 
   return (
     <>
-      <ReactTooltip type="dark" effect="solid" />
+      <ReactTooltip id={tooltipId} place="top" variant="dark" opacity={1} />
+
 
       <Container color={color}>
         <p>{title}</p>
 
         <section>
           {techGroup?.content.map(tech => (
-            <div data-tip={tech.title} key={tech.id}>
+            <div
+            data-tooltip-content={tech.title}
+              data-tooltip-id={tooltipId}
+              key={tech.id}
+            >
               <img src={tech.icon} alt={tech.title} />
             </div>
           ))}

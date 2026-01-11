@@ -2,7 +2,7 @@ import axios from 'axios';
 
 import { GET_REPOS_INFO, GET_USER_INFO, GITHUB_BASEURL_REST } from 'constants/endpoints';
 import { repos } from 'constants/repos';
-import { GithubRepo } from 'models/github';
+import { type GithubRepo } from 'models/github';
 
 const githubApiRest = axios.create({
   baseURL: GITHUB_BASEURL_REST,

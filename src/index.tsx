@@ -1,7 +1,8 @@
 import './index.css';
 
 import React from 'react';
-import ReactDOM from 'react-dom';
+
+import { createRoot } from 'react-dom/client';
 import { IntlProvider } from 'react-intl';
 import { QueryClient, QueryClientProvider } from 'react-query';
 
@@ -19,7 +20,7 @@ const queryClient = new QueryClient({
   },
 });
 
-ReactDOM.render(
+createRoot(document.getElementById('root')!).render(
   <React.StrictMode>
     <IntlProvider defaultLocale="pt-BR" locale="pt-BR" messages={localeMessages}>
       <QueryClientProvider client={queryClient}>
@@ -27,5 +28,4 @@ ReactDOM.render(
       </QueryClientProvider>
     </IntlProvider>
   </React.StrictMode>,
-  document.getElementById('root'),
 );

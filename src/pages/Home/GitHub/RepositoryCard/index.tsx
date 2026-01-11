@@ -1,5 +1,5 @@
 import Gitfork from 'assets/icons/gitfork.svg';
-import { GithubRepo } from 'models/github';
+import { type GithubRepo } from 'models/github';
 
 import { Container, Topics } from './styles';
 
