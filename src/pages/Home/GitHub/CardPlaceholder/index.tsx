@@ -8,6 +8,7 @@ export default function CardPlaceholder(): JSX.Element {
       <StyledCardPlaceholder />
       <StyledCardPlaceholder />
       <StyledCardPlaceholder />
+      <StyledCardPlaceholder />
     </>
   );
 }
